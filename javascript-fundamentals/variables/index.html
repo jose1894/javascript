@@ -2,9 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Variables</title>
 </head>
 <body>
+
+<h1>Variables</h1>
+
+We can declare variables to store data by using the var, let, or const keywords. <br>
+<br>
+<code>let</code> – is a modern variable declaration.<br>
+<code>var</code> – is an old-school variable declaration. Normally we don’t use it at all, but we’ll cover subtle differences from let in the chapter The old "var", just in case you need them.<br>
+<code>const</code> – is like let, but the value of the variable can’t be changed.<br>
+<br>
+Variables should be named in a way that allows us to easily understand what’s inside them.
+
+<h1>Tasks</h1>
+<hr>
+<h2>Task 1</h2>
+<h3>Working with variables</h3>
+<h5>importance: 2</h5>
+<p>
+    Declare two variables: admin and name.
+    Assign the value "John" to name.
+    Copy the value from name to admin.
+    Show the value of admin using alert (must output “John”).
+</p>
+<p>
+    In the code below, each line corresponds to the item in the task list.<br>
+    <code>
+        let admin;<br>
+        let name;<br>
+        <br>
+        <br>
+        name = "John";<br>
+        admin = name;<br>
+        console.log(admin);//Prints "John"
+    </code>
+</p>
+<hr>
+<h2>Task 2</h2>
+<h3>Giving the right name</h3>
+<h5>importance: 3</h5>
+<p>
+    Create a variable with the name of our planet. How would you name such a variable?<br>
+    Create a variable to store the name of a current visitor to a website. How would you name that variable?
+    <br><br>
+    <code>
+        let ourPlanet = "Earth";
+    </code>
+    <br><br>
+    Note, we could use a shorter name planet, but it might be not obvious what planet it refers to.<br>
+    It’s nice to be more verbose. At least until the variable isNotTooLong.<br><br>
+    <code>
+        let currentUserName = "John";
+    </code>
+</p>
+<hr>
+<h2>Task 3</h2>
+<h3>Uppercase const?</h3>
+<h5>importance: 4</h5>
+
+<p>
+    Examine the following code:<br><br>
+    <code>
+        const birthday = '18.04.1982';<br>
+        const age = someCode(birthday);<br>
+    </code><br>
+    Here we have a constant birthday date and the age is calculated from birthday with the help of some code<br>
+    (it is not provided for shortness, and because details don’t matter here).<br>
+
+    Would it be right to use upper case for birthday? For age? Or even for both?<br><br>
+    <code>
+        const BIRTHDAY = '18.04.1982'; // make uppercase? <br>
+        const AGE = someCode(BIRTHDAY); // make uppercase?<br>
+    </code><br>
+</p>
+<h3>Solution</h3>
+<p> We generally use upper case for constants that are “hard-coded”. Or, in other words, when the value is known prior to execution<br>
+    and directly written into the code.</p>
+
+<p>In this code, birthday is exactly like that. So we could use the upper case for it.</p>
+
+<p>In contrast, age is evaluated in run-time. Today we have one age, a year after we’ll have another one. It is constant in a sense that it does not change through the code execution. But it is a bit “less of a constant” than birthday: it is calculated, so we should keep the lower case for it.</p>
+
+
 
 <script type="text/javascript" src="variables.js"></script>
 </body>
