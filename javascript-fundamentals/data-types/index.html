@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data types</title>
+</head>
+<body>
+There are 8 basic data types in JavaScript.
+<ul>
+    <li>number for numbers of any kind: integer or floating-point, integers are limited by ±253.</li>
+    <li>bigint is for integer numbers of arbitrary length.</li>
+    <li>string for strings. A string may have one or more characters, there’s no separate single-character type.</li>
+    <li>boolean for true/false.</li>
+    <li>null for unknown values – a standalone type that has a single value null.</li>
+    <li>undefined for unassigned values – a standalone type that has a single value undefined.</li>
+    <li>object for more complex data structures.</li>
+    <li>symbol for unique identifiers.</li>
+</ul>
+The typeof operator allows us to see which type is stored in a variable.
+<ul>
+    <li>Two forms: typeof x or typeof(x).</li>
+    <li>Returns a string with the name of the type, like "string".</li>
+    <li>For null returns "object" – this is an error in the language, it’s not actually an object.</li>
+</ul>
+In the next chapters, we’ll concentrate on primitive values and once we’re familiar with them, we’ll move on to objects.
+
+<h2>Tasks</h2>
+<hr>
+<h3>String quotes</h3>
+<h5>importance: 5</h5>
+
+What is the output of the script?<br>
+
+<code>
+    let name = "Ilya";<br><br>
+
+    alert( `hello ${1}` ); // ?<br><br>
+
+    alert( `hello ${"name"}` ); // ?<br><br>
+
+    alert( `hello ${name}` ); // ?
+</code>
+<script src="data-types.js" type="text/javascript"></script>
+</body>
+</html>
