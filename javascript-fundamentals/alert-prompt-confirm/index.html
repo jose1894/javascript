@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alert-prompt-confirm</title>
+</head>
+<body>
+    <h1>Alert, confirm, prompt</h1>
+
+    <p>
+            We covered 3 browser-specific functions to interact with visitors:
+            <br><br>
+            <code>alert</code><br>
+            shows a message.<br><br>
+            <code>prompt</code><br>
+            shows a message asking the user to input text. It returns the text or, if Cancel button or Esc is clicked, null.<br><br>
+            <code>confirm</code><br><br>
+            shows a message and waits for the user to press “OK” or “Cancel”. It returns true for OK and false for Cancel/Esc.
+            
+            <p>
+                All these methods are modal: they pause script execution and don’t allow the visitor to interact with the rest of the page until the window has been dismissed.
+                <br>
+                There are two limitations shared by all the methods above:
+            </p>
+            
+            <ul>
+                <li>The exact location of the modal window is determined by the browser. Usually, it’s in the center.</li>
+                <li>The exact look of the window also depends on the browser. We can’t modify it.</li>
+                <li>That is the price for simplicity. There are other ways to show nicer windows and richer interaction with the visitor, but if “bells and whistles” do not matter much, these methods work just fine.</li>
+            </ul>
+            
+            
+            
+            
+            
+    </p>
+    <script type="text/javascript" src="alert-prompt-confirm.js"></script>
+</body>
+</html>
